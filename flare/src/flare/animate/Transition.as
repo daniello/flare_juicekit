@@ -211,10 +211,16 @@ package flare.animate
 				dispatchEvent(new TransitionEvent(TransitionEvent.STEP, this));
 			}
 		}
-		
-		/** @private */
-		internal function doEnd(evtType:String=TransitionEvent.END):void
-		{
+
+    // Copy from flare.animate.TransitionEvent.END
+    /** A transition end event. */
+		public static const END:String = "end";
+
+    /** @private */
+    // http://bugs.adobe.com/jira/browse/ASC-2231
+    // internal function doEnd(evtType:String=TransitionEvent.END):void
+    internal function doEnd(evtType:String=END):void
+    {
 			_frac = _reverse ? 0 : 1;
 			end();
 			_state = INIT;
