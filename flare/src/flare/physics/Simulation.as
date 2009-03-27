@@ -8,10 +8,10 @@ package flare.physics
 	 */
 	public class Simulation
 	{
-		private var _particles:Array = new Array();
-		private var _springs:Array = new Array();
-		private var _forces:Array = new Array();
-		private var _bounds:Rectangle = null;
+		protected var _particles:Array = new Array();
+		protected var _springs:Array = new Array();
+		protected var _forces:Array = new Array();
+		protected var _bounds:Rectangle = null;
 		
 		/** The default gravity force for this simulation. */
 		public function get gravityForce():GravityForce {

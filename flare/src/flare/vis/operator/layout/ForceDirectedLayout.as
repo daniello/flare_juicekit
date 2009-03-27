@@ -37,17 +37,17 @@ package flare.vis.operator.layout
 	 */
 	public class ForceDirectedLayout extends Layout
 	{
-		private var _sim:Simulation;
-		private var _step:Number = 1;
-		private var _iter:int = 1;
-		private var _gen:uint = 0;
-		private var _enforceBounds:Boolean = false;
+		protected var _sim:Simulation;
+		protected var _step:Number = 1;
+		protected var _iter:int = 1;
+		protected var _gen:uint = 0;
+		protected var _enforceBounds:Boolean = false;
 		
 		// simulation defaults
-		private var _mass:Number = 1;
-		private var _restLength:Number = 30;
-		private var _tension:Number = 0.3;
-		private var _damping:Number = 0.1;
+		protected var _mass:Number = 1;
+		protected var _restLength:Number = 30;
+		protected var _tension:Number = 0.3;
+		protected var _damping:Number = 0.1;
 		
 		/** The default mass value for node/particles. */
 		public function get defaultParticleMass():Number { return _mass; }
