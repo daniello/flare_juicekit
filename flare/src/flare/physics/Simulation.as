@@ -231,7 +231,7 @@ package flare.physics
 			if (_bounds) enforceBounds();
 		}
 		
-		private function enforceBounds():void {
+		protected function enforceBounds():void {
 			var minX:Number = _bounds.x;
 			var maxX:Number = _bounds.x + _bounds.width;
 			var minY:Number = _bounds.y;
